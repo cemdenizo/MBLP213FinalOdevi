@@ -9,8 +9,8 @@
 ## PowerShell Script Çalışma Mantığı
 
 ![mantik](https://drive.google.com/uc?export=view&id=17oE33WJaIo1PY_8-Og6pKS8NsktbY0BA)
-## Kullaılan CMDLET
+## Kullanılan CMDLET
 
-### Get-WMIObject Win32_ComputerSystem
-### Get-Counter "\Process(*)\% Processor Time"
-### $_.CookedValue / $CpuCores
+#### Get-WMIObject Win32_ComputerSystem
+#### Get-Counter "\Process(*)\% Processor Time"
+#### $_.CookedValue / $CpuCores
