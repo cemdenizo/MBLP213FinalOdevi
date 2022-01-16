@@ -1,6 +1,3 @@
-﻿#Cem Deniz Önalp 20MY93301
-#MBLP213 final ödevi
-#
 #Powershell scripti ile powershell schedule job tasarlanacakır
 #job ın çalıştırcağı komut içerik olarak;
 #İşletim sisteminde arkada çalışan programları task manager 
