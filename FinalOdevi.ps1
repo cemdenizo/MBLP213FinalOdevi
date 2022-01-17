@@ -14,7 +14,7 @@ $taskTrigger = New-ScheduledTaskTrigger `
     -Once -At 12:08pm `
     -RepetitionInterval (New-TimeSpan -Minutes 5) `
     -RepetitionDuration (New-TimeSpan -Hours 1)
-$description = "Yüzde 20 CPU kullanımını geçen processleri loglar"
+$description = "Yüzde 10 CPU kullanımını geçen processleri loglar"
 
 
 if($taskExists) {
