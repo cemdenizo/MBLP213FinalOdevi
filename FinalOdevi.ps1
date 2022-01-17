@@ -1,5 +1,5 @@
 #Bu Powershell scripti schedule job başlatır.
-#Script, anlık olarak CPU kullanımı %20 u geçtiğinde 
+#Script, anlık olarak CPU kullanımı %10 u geçtiğinde 
 #process adı ve yüzdeleri CpuLog.txt dosyasına yazar.
 
 $taskName = "CpuTask"
@@ -36,7 +36,7 @@ if($taskExists) {
   
   #CpuTime içinde %10 dan fazla varsa log dosyasına yaz
      foreach($sonuc in $CpuTime){
-        if($sonuc.'CPU %' -gt 20){
+        if($sonuc.'CPU %' -gt 10){
             Write-Output "$sonuc  $(Get-Date -Format "yyyy/MM/dd HH:mm:ss")" | Out-file $logFile -append
             Write-Host "$sonuc  $(Get-Date -Format "yyyy/MM/dd HH:mm:ss")"
         }
