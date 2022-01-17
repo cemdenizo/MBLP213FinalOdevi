@@ -11,7 +11,7 @@ $psScript = "C:\Users\cdona\Documents\PoweShell\FinalOdevi.ps1"
 $taskAction = New-ScheduledTaskAction -Execute $psScript
 #Task her gün saat 12 de 1 kez 1 saat boyunca 5dk da bir çalışacak
 $taskTrigger = New-ScheduledTaskTrigger `
-    -Once -At 12:08pm `
+    -Once -At 12:00pm `
     -RepetitionInterval (New-TimeSpan -Minutes 5) `
     -RepetitionDuration (New-TimeSpan -Hours 1)
 $description = "Yüzde 10 CPU kullanımını geçen processleri loglar"
