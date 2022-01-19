@@ -27,7 +27,6 @@ if($taskExists) {
         -Trigger $taskTrigger `
         -Description $description
 }
-while($true){
     $logFile = "C:\Users\cdona\Documents\PoweShell\CpuLog.txt"
     $CpuCores = (Get-WMIObject Win32_ComputerSystem).NumberOfLogicalProcessors
     $CpuTime = (Get-Counter "\Process(*)\% Processor Time" -ErrorAction SilentlyContinue).CounterSamples | Select InstanceName, 
@@ -42,5 +41,3 @@ while($true){
             #Write-Host "$sonuc  $(Get-Date -Format "yyyy/MM/dd HH:mm:ss")"
         }
      }
-Start-Sleep 3
-}
