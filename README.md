@@ -12,7 +12,7 @@
 9. Emircan Çetinkaya
 10. Deniz Önalp
 11. Berke Abike
-12. Berkcan ...
+12. Berkcan Karabulut
 ## Ödev Konusu:
 
 #### Powershell scripti ile powershell schedule job tasarlanacakır job ın çalıştırcağı komut içerik olarak; İşletim sisteminde arkada çalışan programları task manager mantığı ile izleyerek Cpu yüzdesi %10 veya yukarı işlemleribir log dosyası oluşturulup Örnek: "Task.log", içine  zaman damgası ile "2021-01-10 13:12:04,634 text.exe Cpu 20%" uygulama isimleri ve cpu yüzdeleri kaydedilecektir
