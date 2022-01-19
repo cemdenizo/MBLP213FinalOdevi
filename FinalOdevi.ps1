@@ -27,6 +27,7 @@ if($taskExists) {
         -Trigger $taskTrigger `
         -Description $description
 }
+while($true){
     $logFile = "C:\Users\cdona\Documents\PoweShell\CpuLog.txt"
     $CpuCores = (Get-WMIObject Win32_ComputerSystem).NumberOfLogicalProcessors
     $CpuTime = (Get-Counter "\Process(*)\% Processor Time" -ErrorAction SilentlyContinue).CounterSamples | Select InstanceName, 
@@ -36,8 +37,10 @@ if($taskExists) {
   
   #CpuTime içinde %10 dan fazla varsa log dosyasına yaz
      foreach($sonuc in $CpuTime){
-        if($sonuc.'CPU %' -gt 10){
+        if($sonuc.'CPU %' -gt 1){
             Write-Output "$sonuc  $(Get-Date -Format "yyyy/MM/dd HH:mm:ss")" | Out-file $logFile -append
-            Write-Host "$sonuc  $(Get-Date -Format "yyyy/MM/dd HH:mm:ss")"
+            #Write-Host "$sonuc  $(Get-Date -Format "yyyy/MM/dd HH:mm:ss")"
         }
      }
+Start-Sleep 3
+}
